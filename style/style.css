@@ -220,16 +220,15 @@ header{
     justify-content: space-around;
     align-items: center;
     
-}
+} 
 
-.pie{
+.pie{                                           
     background-color: #921a40;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .caja1, .caja2, .copia{
