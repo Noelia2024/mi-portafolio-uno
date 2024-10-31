@@ -12,22 +12,31 @@
   </head>
   <body>      
     <header>
+      <section class="icono-menu">
+        <label class="menu">
+          <img src="./icon/icon8-menu.png" alt="">
+        </label>
+        <input type="checkbox" id="boton-menu">
+      </section>
       <section class="logo">
-        <img src="./logo-personal/logo-personal-tres.jpg" alt="">
         <h2 class="nombre">Noelia Lucero</h2>
-        <!-- <img src="./icon/icon8-menu.png" alt=""> -->
       </section>
       <nav class="navegador">
-          <a href="#sobreMi">Sobre Mi</a>
-          <a href="#misProyectos">Mis Proyectos</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#contacto">Contacto</a>
+        <ul>
+          <li><a href="#sobremi">Sobre Mi</a></li>
+          <li><a href="#misproyectos">Mis Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#escribeme">Escríbeme</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>  
       </nav>
     </header>
-    <main class="portada">   <!---hecho el Main-->
+    <main>   <!---hecho el Main-->
       <h1>Bienvenidos a mi portafolio</h1>
-    </main>
-    <section class="sobremi">
+      <div class="imagen">
+        <img src="./style/imagenes/logo-personal.jpg" alt="">
+      </div>  
+    <section id="sobremi">
       <h2 class="info">Sobre Mi</h2>     <!---hecho Sobre Mi -->
       <div class="texto">
       <p>
@@ -40,10 +49,12 @@
       </p>
       </div>
     </section>
-    <section class="proyectos">                      <!-------listos pero falta terminar----------->
-      <h2 class="titulo">Mis Proyectos</h2>
+    <section id="misproyectos">                                     <!----------Terminado mis proyectos----------->
+      <h2 class="titulo1">Mis Proyectos</h2>
+      <section class="contenedor">
       <div class="card1">
         <h3 class="sitioweb">Sitios web corporativos</h3>
+        <img class="img1" src="./style/imagenes/sitios-web-corporativos.jpg" alt="">
         <p class="parrafo1">
           Crear y mantener la presencia en línea de empresas, asegurando que la
           experiencia del usuario sea intuitiva y atractiva.
@@ -51,6 +62,7 @@
       </div>
       <div class="card2">
         <h3 class="ecommerce">E-commerce</h3>
+        <img class="img2" src="./style/imagenes/e-comercce.jpg" alt="">
         <p class="parrafo2">
           Diseñar plataformas de venta en línea, enfocándose en la usabilidad,
           el diseño atractivo y la optimización para conversiones.
@@ -58,6 +70,7 @@
       </div>
       <div class="card3">          
         <h3 class="landing">Landing Pages</h3>
+        <img class="img3" src="./style/imagenes/landing-pages.jpg" alt="">
         <p class="parrafo3">
           Crear páginas de destino para campañas específicas, optimizadas para
           la conversión y con un diseño llamativo.
@@ -65,6 +78,7 @@
       </div>
       <div class="card4">
         <h3 class="accesibilidad">Proyectos de Accesibilidad</h3>
+        <img class="img4" src="./style/imagenes/proyectos-de-accesibilidad.jpg" alt="">
         <p class="parrafo4">
           Asegurarse de que los sitios sean accesibles para todos los usuarios,
           siguiendo las pautas WCAG.
@@ -72,6 +86,7 @@
       </div>
       <div class="card5">
         <h3 class="blogs">Blogs y Portafolios</h3>
+        <img class="img5" src="./style/imagenes/blog-y-portafolios.jpg" alt="">
         <p class="parrafo5">
           Desarrollar sitios para mostrar trabajos creativos o compartir
           contenido, utilizando plataformas como WordPress o generadores de
@@ -80,22 +95,24 @@
       </div>
       <div class="card6">
         <h3 class="aplicaciones">Aplicaciones Web</h3>
+        <img class="img6" src="./style/imagenes/aplicaciones-web.jpg" alt="">
         <p class="parrafo6">
           Desarrollar aplicaciones interactivas usando frameworks como React,
           Angular o Vue.js, que ofrezcan funcionalidades avanzadas.
         </p>
       </div>
+      </section> 
     </section>
-    <section class="caja-conocimientos">
-      <h2 class="conocimientos">Mis conocimientos</h2>
-      <p class="texto2">
+    <section id="habilidades">                <!---------Terminado habilidades----------->
+      <h2 class="titulo2">Habilidades</h2>
+        <p class="texto2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et quas
         optio aliquam, cumque commodi ad adipisci officia, voluptas nemo magni
         eos minima placeat illum recusandae voluptatum quam dignissimos error
         libero quod ullam unde dolor corrupti harum. Dolorum, voluptas ad.
         Asperiores vero nobis molestias quis ratione commodi minima eaque
         incidunt.
-      </p>
+        </p>
       <div class="imagenes">
         <img class="uno" src="./icon/icons8-html-5.png">
         <img class="dos" src="icon/icons8-css3.png">
@@ -106,22 +123,36 @@
         <img class="siete" src="./icon/icons8-github.png">
       </div>
     </section>
-    <section class="contenedor">  
-      <h3 class="escribeme">Escribeme</h3>
-      <div class="formulario">
+    <section id="escribeme">  
+      <h3 class="mail">Escríbeme</h3>
+      <section class="formulario">
+        <div class="nom">
           <label>Nombre</label>
           <input type="text"  name="nombre" placeholder="Ada">
+        </div> 
+        <div class="ape">
           <label>Apellido</label>
           <input type="apellido" name="apellido" placeholder="Lovelace">
+        </div>
+        <div class="email"> 
           <label>Email</label>
           <input type="email" name="email" placeholder="adalovelace@gmail.com">
+        </div> 
+        <div class="men">  
           <label>Mensaje</label>
           <textarea name="mensaje" cols="20" rows="10"    placeholder="Escriba su mensaje aquí"></textarea>
-      </div>
+        </div>  
+        <div class="enviar">  
+          <label>
+            <input type="submit"  value="enviar" id="btn">
+          </label>
+        </div>  
+      </section>
     </section>
+    </main>
   </body>
   <footer>
-    <section class="pie"> 
+    <section id="contacto"> 
       <div class="caja1">
         <h3 class="contacto">Contacto</h3>
         <ul class="enlaces">
@@ -137,7 +168,9 @@
           <li><a href="https://discord.com/" target="blank"><img src="./icon/icons8-discord.png" alt=""></a></li>
         </ul>
       </div>
-      <p class="copia">&copy;Copyrigth 2024. Todos los derechos reservados.</p>
+      <div class="caja-copia">
+        <p class="copia">&copy;Copyrigth 2024. Todos los derechos reservados.</p>
+      </div>
     </section>
   </footer>
 </html>
