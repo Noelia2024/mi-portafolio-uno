@@ -210,10 +210,28 @@ main .texto{
     cursor: pointer;
 }
 
+#contacto{                 /*-----------Contacto----------*/
+    background-color: #00ff9c;
+}
 
+.caja1 .conta, .caja2 .redes, .caja-copy{
+    text-align: center;
+    color: #700d2c;
+    margin: 0px;
+}
 
+.enlaces li, a, .sociales{
+    list-style: none;
+    text-decoration: none;
+    color: #700d2c;
+}
 
-
+.enlaces, .sociales{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+}
 
 
 
