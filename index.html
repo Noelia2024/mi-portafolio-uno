@@ -4,26 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icon/logo.ico">
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>      
-    <header>
-      <section class="icono-menu">
-        <label class="menu">
-          <img src="./icon/icon8-menu.png" alt="">
-        </label>
-        <input type="checkbox" id="boton-menu">
-      </section>
+    <header>                           <!---------Header--------------->
       <section class="logo">
         <h2 class="nombre">Noelia Lucero</h2>
       </section>
       <nav class="navegador">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkboton">
+          <img class="icono-menu" src="/icon/icons8-menú.png" alt="">
+        </label>
         <ul>
-          <li><a href="#sobremi">Sobre Mi</a></li>
+          <li><a class="activar"  href="#sobremi">Sobre Mi</a></li>
           <li><a href="#misproyectos">Mis Proyectos</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#escribeme">Escríbeme</a></li>
@@ -31,13 +29,14 @@
         </ul>  
       </nav>
     </header>
-    <main>   <!---hecho el Main-->
+    <main>                             <!-----------Secciones------------------>
       <h1>Bienvenidos a mi portafolio</h1>
-      <div class="imagen">
-        <img src="./style/imagenes/logo-personal.jpg" alt="">
-      </div>  
+        <p class="simbolo">{NL}</p>
+      <!-- <div class="imagen"> -->
+        <!-- <img src="./style/imagenes/logo-personal.jpg" alt=""> -->
+      <!-- </div> -->
     <section id="sobremi">
-      <h2 class="info">Sobre Mi</h2>     <!---hecho Sobre Mi -->
+      <h2 class="info">Sobre Mi</h2>             <!----------- Sobre Mi------->
       <div class="texto">
       <p>
         Soy Noelia. Este portafolio es una colección de mis trabajos más
@@ -49,7 +48,7 @@
       </p>
       </div>
     </section>
-    <section id="misproyectos">                                     <!----------Terminado mis proyectos----------->
+    <section id="misproyectos">                                     <!----------Mis proyectos----------->
       <h2 class="titulo1">Mis Proyectos</h2>
       <section class="contenedor">
       <div class="card1">
@@ -103,7 +102,7 @@
       </div>
       </section> 
     </section>
-    <section id="habilidades">                <!---------Terminado habilidades----------->
+    <section id="habilidades">                <!------------Habilidades-------------->
       <h2 class="titulo2">Habilidades</h2>
         <p class="texto2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et quas
@@ -123,7 +122,7 @@
         <img class="siete" src="./icon/icons8-github.png">
       </div>
     </section>
-    <section id="escribeme">  
+    <section id="escribeme">                 <!---------Escribime-------------------->
       <h3 class="mail">Escríbeme</h3>
       <section class="formulario">
         <div class="nom">
@@ -151,21 +150,21 @@
     </section>
     </main>
   </body>
-  <footer>
+  <footer>                     <!----------Contacto-------------------->
     <section id="contacto"> 
       <div class="caja1">
         <h3 class="conta">Contacto</h3>
         <ul class="enlaces">
-          <li><a href="https://www.linkedin.com/login/es" target="_blank"><img src="./icon/icons8-linkedin.png" alt="">Noelia Lucero</a></li>
-          <li><a href="http://www.mailgoogle.com" target="_blank"><img src="./icon/icons8-gmail.png" alt="">noelialucero@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/login/es" target="_blank"><img class="icono1" src="./icon/icons8-linkedin.png" alt=""></a></li>
+          <li><a href="http://www.mailgoogle.com" target="_blank"><img class="icono2"  src="./icon/icons8-gmail.png" alt=""></a></li>
         </ul>
       </div>
       <div class="caja2">
         <h3 class="redes">Seguime en las redes</h3>
         <ul class="sociales">
-          <li><a href="http://www.facebook.com" target="_blank"><img src="./icon/icons8-facebook.png" alt=""></a></li>
-          <li><a href="http://www.instagram.com" target="_blank"><img src="./icon/icons8-instagram.png" alt=""></a></li>
-          <li><a href="https://discord.com/" target="blank"><img src="./icon/icons8-discord.png" alt=""></a></li>
+          <li><a href="http://www.facebook.com" target="_blank"><img class="icono3" src="./icon/icons8-facebook.png" alt=""></a></li>
+          <li><a href="http://www.instagram.com" target="_blank"><img class="icono4" src="./icon/icons8-instagram.png" alt=""></a></li>
+          <li><a href="https://discord.com/" target="blank"><img class="icon" src="./icon/icons8-discord.png" alt=""></a></li>
         </ul>
       </div>
       <div class="caja-copy">
